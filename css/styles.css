@@ -1,0 +1,235 @@
+@charset:"UTF-8";
+:root{
+  --light-red:hsl(0, 100%, 67%);
+  --orange-yellow:hsl(39, 100%, 56%);
+  --green-teal:hsl(166, 100%, 37%);
+  --cobalt-blue:hsl(234, 85%, 45%);
+  --light-slate-blue:hsl(252, 100%, 67%);
+  --light-royal-blue:hsl(241, 81%, 54%);
+  --violet-blue:hsla(256, 72%, 46%, 1);
+  --persian-blue:hsla(241, 72%, 46%, 0);
+  --pale-blue:hsl(221, 100%, 96%);
+  --light-lavender:hsl(241, 100%, 89%);
+  --dark-gray-blue:hsl(224, 30%, 27%);
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+@font-face{
+  font-family:hanken;
+  src:url(../fontes/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+  font-size:5.625vw;
+  font-family:hanken;
+}
+header{
+  background-image:linear-gradient(var(--light-slate-blue),var(--light-royal-blue));
+  text-align:center;
+  color:white;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
+}
+#result{
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size:6.875vw;
+  color:var(--light-lavender);
+}
+.circle{
+  width:43.75vw;
+  height:43.75vw;
+  border-radius:50%;
+  margin:auto;
+  margin-bottom:5.48vh;
+  background-image:linear-gradient(var(--violet-blue),var(--persian-blue));
+}
+.circle h1{
+  padding-top:5.48vh;
+  font-size:17.5vw;
+}
+.circle h2{
+  font-size:5vw;
+  margin-top:-2.74vh;
+  color:hsl(246.9,100%,72.5%);
+}
+header h2{
+  font-size:8.4375vw;
+}
+header p{
+  margin-top:18px;
+  padding-bottom:50px;
+  font-size:5.625vw;
+  color:var(--light-lavender);
+  margin-left:60px;
+  margin-right:60px;
+  text-align:center;
+}
+main{
+  margin-left:9.375vw;
+  margin-top:4.57vh;
+  margin-bottom:4.57vh;
+}
+main h1{
+  color:var(--dark-gray-blue);
+  font-size:6.25vw;
+  margin-bottom:4.75vh;
+}
+main div{
+  display:flex;
+  border-radius:10px;
+  width:84vw;
+  height:9.1vh;
+  font-size:5.625vw;
+  margin-bottom:2.74vh;
+  display:flex;
+  align-items:center;
+}
+.reaction{
+  background-color:#FFF6F5;
+  color:var(--light-red);
+}
+.memory{
+  background-color:#FFFBF2;
+  color:var(--orange-yellow);
+}
+.verbal{
+  background-color:#F2FBFA;
+  color:var(--green-teal);
+}
+.verbal p{
+  margin-left:25.875vw;
+}
+.visual{
+  background-color:#F3F3FD;
+  color:var(--light-royal-blue);
+}
+.visual p{
+  margin-left:25.875vw;
+}
+main p{
+  color:var(--light-lavender);
+  margin-left:20.25vw;
+}
+strong{
+  color:var(--dark-gray-blue);
+}
+main img{
+  width:20px;
+  height:20px;
+  padding-left:4.375vw;
+  padding-right:4.375vw;
+}
+main h2{
+  font-size:5.625vw;
+}
+.continue{
+  width:89.6875vw;
+  height:10vh;
+  margin-left:-3.425vw;
+  margin-right:8.75vw;
+  margin-bottom:5.48vh;
+  background-color:var(--dark-gray-blue);
+  border-radius:7vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.continue a{
+  text-decoration:none;
+  color:white;
+  font-size:5vw;
+}
+.continue:hover{
+  background-image:linear-gradient(var(--violet-blue),var(--light-royal-blue));
+}
+@media screen and (min-width:750px){
+  body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+  }
+  header{
+    width:375px;
+    height:500px;
+    border-radius:30px;
+    box-shadow:1px 1px 10px var(--light-lavender);
+  }
+  header h2{
+    font-size:37px;
+    margin-top:-40px;
+    margin-bottom:5px;
+  }
+  .circle{
+    width:180px;
+    height:180px;
+  }
+  .circle h1{
+    font-size:77px;
+    padding-top:25px;
+  }
+  .circle h2{
+    font-size:18px;
+    margin-top:-10px;
+  }
+  header p{
+    padding-top:-10px;
+    margin-bottom:25px;
+    font-size:20px;
+  }
+  #result{
+    font-size:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  main{
+    width:395px;
+    height:500px;
+    margin-left:-20px;
+    z-index:-1;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    border:1px solid var(--light-lavender);
+    box-shadow:1px 1px 10px var(--light-lavender);
+  }
+  main h1{
+    padding-left:55px;
+    padding-top:25px;
+    font-size:18px;
+    margin-bottom:25px;
+  }
+  main div{
+    width:290px;
+    height:55px;
+    margin-bottom:20px;
+    margin-left:55px;
+  }
+  main img{
+    padding-left:12px;
+    padding-right:12px;
+  }
+  main div p{
+    font-size:18px;
+    margin-left:83px;
+  }
+  .visual p{
+    margin-left:100px;
+  }
+  .verbal p{
+    margin-left:100px;
+  }
+  main div h2{
+    font-size:18px;
+  }
+  .continue{
+    margin:45px auto;
+    width:288px;
+    height:56px;
+  }
+  .continue a{
+    font-size:18px;
+  }
+}
